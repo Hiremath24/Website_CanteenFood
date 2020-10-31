@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+         * {
+         box-sizing:border-box;
+         }
+         body {
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;
+         }
+         .container {
+         padding: 64px;
+         }
+         .row:after {
+         content: "";
+         display: table;
+         clear: both
+         }
+         .column-66 {
+         float: left;
+         width: 66.66666%;
+         padding: 20px;
+         }
+         .column-33 {
+         float: left;
+         width: 33.33333%;
+         padding: 20px;
+         }
+         .large-font {
+         font-size: 48px;
+         }
+         .xlarge-font {
+         font-size: 64px
+         }
+         .button {
+         border: none;
+         color: white;
+         padding: 14px 28px;
+         font-size: 16px;
+         cursor: pointer;
+         background-color: #4CAF50;
+         }
+         img {
+         display: block;
+         height: auto;
+         max-width: 100%;
+         }
+         @media screen and (max-width: 1000px) {
+         .column-66,
+         .column-33 {
+         width: 100%;
+         text-align: center;
+         }
+         img {
+         margin: auto;
+         }
+         }
+         .dropbtn {
+         background-color: black;
+         color: Dodgerblue;
+         padding: 15px;
+         font-size: 20px;
+         border: none;
+         cursor: pointer;
+         }
+         .dropdown {
+         position: relative;
+         display: inline-block;
+         }
+         .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color:Tomato;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+         }
+         .dropdown-content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         }
+         .dropdown-content a:hover {background-color:white}
+         .dropdown:hover .dropdown-content {
+         display: block;
+         }
+         .dropdown:hover .dropbtn {
+         background-color: white;
+         }
+         .header {
+            padding: 10px;
+            text-align: center;
+            background-color:#20B2AA;
+            color: #92a8d1;
+            font-size: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="header">
+         <marquee>
+            <h1 style="color:Black"; class="large-font"> CANTEEN FOOD ORDERING SYSTEM</h1>
+         </marquee>
+         <h2 style="color:white"; class="medium-font" >Heaven Of Food&#128525</h2>
+      </div>
+      <!-- The Menu Section -->
+      <div class="container">
+         <div class="row">
+            <div class="column-66">
+               <h1 class="xlarge-font"><b>Menu</b></h1>
+               <h1 class="large-font" style="color:MediumSeaGreen;"><b>Hungry ??</b></h1>
+               <p><span style="font-size:24px">Here are the yummy food items !!!</span> Food is an important part of a balanced diet. Living a healthy lifestyle can help prevent chronic diseases and long-term illnesses. Feeling good about yourself and taking care of your health are important for your self-esteem and self-image. Maintain a healthy lifestyle by doing what is right for your body.</p>
+               <div class="dropdown">
+                  <button class="dropbtn">Menu list</button>
+                  <div class="dropdown-content">
+                     <a href="food_items.html">Food items</a>
+                     <a href="juice_items.html">Juice</a>
+                     <a href="dessert_items.html">Ice cream</a>
+                  </div>
+               </div>
+            </div>
+            <div class="column-33">
+               <img src="images/menu.png" width="550" height="471">
+            </div>
+         </div>
+      </div>
+      <!-- Gallery Section -->
+      <div class="container" style="background-color:#f1f1f1">
+         <div class="row">
+            <div class="column-33">
+               <img src="images/h2.png" alt="App" width="550" height="471">
+            </div>
+            <div class="column-66">
+               <h1 class="xlarge-font"><b>Gallery</b></h1>
+               <h1 class="large-font" style="color:MediumSeaGreen;"><b>Food Items&#128523</b></h1>
+               <p><span style="font-size:24px">Health is wealth.</span> Food is any substance consumed to provide nutritional support for an organism. Food is usually of plant, animal or fungal in origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells to provide energy, maintain life, or stimulate growth. Different species of animals have different feeding behaviours that satisfy the needs of their unique metabolisms, often evolved to fill a specific ecological niche within specific geographical contexts.</p>
+               <div class="dropdown">
+                  <button class="dropbtn">Food Gallery</button>
+                  <div class="dropdown-content">
+                     <a href="gallery.html">Food gallery</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Order Section -->
+      <div class="container">
+         <div class="row">
+            <div class="column-66">
+               <h1 class="xlarge-font"><b>Order</b></h1>
+               <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why order ?</b></h1>
+               <p><span style="font-size:24px">Yummy food is waiting for you !!!</span> Meal delivery orders are typically on demand, intended to be eaten right away, and include hot, already-prepared food. An online food ordering system software allows restaurant businesses to accept and manage orders placed over the internet. First is a website or mobile app for hungry customers to view the restaurant's dishes and place an online order. Having online orders can make the day to day operations more efficient for a canteen. The time employees use to receive orders through the telephone is reduced and this increases the time employees have to focus on dine-in customers. </p>
+               <div class="dropdown">
+                  <button class="dropbtn">Cutsomer Order</button>
+                  <div class="dropdown-content">
+                     <a href="order_page.html">Order list</a>
+                  </div>
+               </div>
+            </div>
+            <div class="column-33">
+               <img src="images/of.jpg" width="550" height="471" >
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+         .container {
+         position: relative;
+         width: 50%;
+         }
+         .image {
+         display: block;
+         width: 80;
+         height: auto;
+         }
+         .overlay {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 100%;
+         width: 100%;
+         opacity: 0;
+         transition: .5s ease;
+         background-color: lightblue;
+         }
+         .container:hover .overlay {
+         opacity: 1;
+         }
+         .text {
+         color: black;
+         font-size: 20px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         }
+         @media only screen and (max-width: 700px) {
+         .responsive {
+         width: 49.99999%;
+         margin: 6px 0;
+         }
+         }
+         @media only screen and (max-width: 500px) {
+         .responsive {
+         width: 100%;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <h2>Food Items</h2>
+      <div class="container">
+         <img src="images/md.jfif" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Masal Dosa</div>
+         </div>
+      </div>
+      <div class="container">
+         <img src="images/c.jfif" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Chikoo</div>
+         </div>
+      </div>
+      <div class="container">
+         <img src="images/st.jfif" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Strawberry</div>
+         </div>
+      </div>
+      <div class="container">
+         <img src="images/ch.jfif" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Chocolate</div>
+         </div>
+      </div>
+      <div class="container">
+         <img src="images/iw.jfif" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Idli Wada</div>
+         </div>
+      </div>
+      <div class="container">
+         <img src="images/pa.jfif" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Palav</div>
+         </div>
+      </div>
+      <div class="container">
+         <img src="images/v.jfif"" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Vanilla</div>
+         </div>
+      </div>
+      <div class="container">
+         <img src="images/b.jfif"" alt="Avatar" class="image">
+         <div class="overlay">
+            <div class="text">Belpuri</div>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,229 @@
+<html>
+   <head>
+      <style>
+         #customers {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 60%;
+         }
+         #customers td, #customers th {
+         border: 1px solid black;
+         padding: 8px;
+         }
+         #customers th {
+         padding-top: 12px;
+         padding-bottom: 12px;
+         text-align: left;
+         background-color:lightgrey;
+         color:blue;
+         }
+         tr:hover {
+         background-color:lightgrey;
+         }
+         tr:nth-child(even){
+         background-color:#f2f2f2;}
+         label.dashed{
+         border-style: dashed}
+         div{color:red;
+         font-weight:bold;
+         text-transform:uppercase;}
+         h1{
+         color:red;
+         font-weight:bold;
+         text-shadow:3px 2px red;
+         font-style:italic;
+         }
+      </style>
+   </head>
+   <body style="background-color:skyblue">
+      <form action="order.php" method="POST">
+         <fieldset>
+            <marquee>
+               <h2> Place The Order</h2>
+            </marquee>
+            <legend>BILL</legend>
+            <h1>FOOD ITEMS ORDER</h1>
+            <label>
+               <h2>Name:<input type="text" name="name"</h2>
+            </label>
+            <label>phone no:<input type="number" name="number"/></label></br></br>
+            <label>email:<input type="email" name="email"/></label>
+            city:
+            <select name="city">
+               <option>bijapur</option>
+               <option>hubli</option>
+               <option>belagam</option>
+            </select>
+            </br></br>
+            <label>address:<input type="textarea" name="add"/></label></br>
+            <table id="customers">
+               <tr>
+                  <th>
+                     <h2>Food items</h2>
+                  </th>
+                  <th>
+                     <h2>Price</h2>
+                  </th>
+                  <th>
+                     <h2>Quantity</h2>
+                  </th>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Masala dosa</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 45</h3>
+                  </td>
+                  <td><input type="text" name="a"  pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Idli Wada</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 30</h3>
+                  </td>
+                  <td><input type="text" name="b" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Puri</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 40</h3>
+                  </td>
+                  <td><input type="text" name="c" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Palav</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 40</h3>
+                  </td>
+                  <td><input type="text" name="d" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Mango</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 45</h3>
+                  </td>
+                  <td><input type="text" name="e" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Orange</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 30</h3>
+                  </td>
+                  <td><input type="text" name="f" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Apple</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 40</h3>
+                  </td>
+                  <td><input type="text" name="g" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>chikku</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 40</h3>
+                  </td>
+                  <td><input type="text" name="h" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Panipuri</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 45</h3>
+                  </td>
+                  <td><input type="text" name="i" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Gobi</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 30</h3>
+                  </td>
+                  <td><input type="text" name="j" pattern="[0-9]"/></td>
+               </tr>
+               <td>
+                  <h3>Sevpuri</h3>
+               </td>
+               <td>
+                  <h3>Rs 40</h3>
+               </td>
+               <td><input type="text" name="n" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Bhelpuri</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 40</h3>
+                  </td>
+                  <td><input type="text" name="k" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Strawberry</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 45</h3>
+                  </td>
+                  <td><input type="text" name="l" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Venilla</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 30</h3>
+                  </td>
+                  <td><input type="text" name="m" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+               <tr>
+                  <td>
+                     <h3>Chocolate</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 40</h3>
+                  </td>
+                  <td><input type="text" name="o" pattern="[0-9]"/></td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Butterscotch</h3>
+                  </td>
+                  <td>
+                     <h3>Rs 40</h3>
+                  </td>
+                  <td><input type="text" name="p" pattern="[0-9]"/></td>
+               </tr>
+            </table>
+            <h2>PAYMENT METHOD</h2>
+            <div>
+               <h3>
+                  <input type="radio" name="payment" value="Master card " checked>The Master card<br>
+                  <input type="radio" name="payment" value="paytm" >Paytm<br>
+                  <input type="radio" name="payment" value="Tez app">Tez app<br>
+               </h3>
+            </div>
+            <input type="submit" style="color:green"  value="submit order"/>
+            <input type="reset" style="color:blue"  value="Clear Order Form"/>
+         </fieldset>
+      </form>
+   </body>
+</html>
